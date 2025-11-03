@@ -13,7 +13,7 @@
     color:#fff;
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-betwevgen;
     padding:1rem 2rem;
     position:sticky; top:0;
     z-index:1000;
@@ -75,6 +75,7 @@
     background:var(--primary); color:#fff; border:none;
     padding:.8rem 1.6rem; border-radius:6px; font-size:1rem; cursor:pointer;
     transition:background .2s;
+    
   }
   .hero-text button:hover { background:#0284c7; }
   .hero img { width:420px; max-width:100%; border-radius:12px; }
@@ -172,12 +173,19 @@
     .hero { flex-direction:column; text-align:center; }
     .hero img { margin-top:2rem; }
     .about { flex-direction:column; text-align:center; }
+    
+    
   }
   @media (max-width:700px){
     nav { display:none; }
-    .hamburger { display:block; }
+    
   }
   @media (max-width:480px){
     .hero-text h2 { font-size:1.8rem; }
     h3.section-title { font-size:1.5rem; }
+    
   }
+    @media (min-width:900px){
+    
+    .hamburger { display:none; }
+    }

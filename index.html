@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical</title>
-    <a href="MEDICAL WEBSITE"></a>
     <link rel="stylesheet" href="stlyes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -41,7 +40,13 @@
     <h2>Your Health, Our Priority</h2>
     <p>Providing top-notch healthcare services and medical products that you can trust. 
     Experience care that goes beyond treatment.</p>
-    <button>Book Appointment</button>
+
+    <a href="appointment.html">
+
+  <button> Book Appointment</button>
+</a>
+
+    
   </div>
   <img src="images.jpg" alt="doctor">
 </section>
@@ -120,7 +125,7 @@
 <section class="location" id="location">
   <h3 class="section-title">Our Location</h3>
   <iframe 
-    src="https://www.google.com/maps/place/Brightway+Junction/@9.9276254,8.8553829,16.98z/data=!4m6!3m5!1s0x105373eff0c542db:0x79191d7c05453901!8m2!3d9.9276564!4d8.8579765!16s%2Fg%2F11gt9wjpm_?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D" 
+    src="https://www.google.com/maps/place/Brightway+Junction/@9.9276254,8.8553829,17z/data=!4m6!3m5!1s0x105373eff0c542db:0x79191d7c05453901!8m2!3d9.9276564!4d8.8579765!16s%2Fg%2F11gt9wjpm_?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D" 
     width="100%" height="400" style="border:0; border-radius:8px;" 
     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
   </iframe>
@@ -133,22 +138,15 @@
 <footer>
   &copy; 2025 Blessed Med. All Rights Reserved.
 </footer>
-
 <script>
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('.nav-links');
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-  });
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
 
-  document.querySelectorAll('.nav-links a').forEach(link =>
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      navMenu.classList.remove('active');
-    })
-  );
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
 </script>
 
 
